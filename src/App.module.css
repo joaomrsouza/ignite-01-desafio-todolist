@@ -1,0 +1,101 @@
+.container > header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gray-700);
+  height: 12.5rem;
+}
+
+.container > main {
+  margin: -1.6875rem auto auto auto;
+  max-width: 45rem;
+  padding: 0 1rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+.form > button[type="submit"] {
+  background: var(--blue-dark);
+  border: 0;
+  border-radius: 8px;
+  color: var(--gray-100);
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.225;
+  padding: 1rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  transition: background 0.1s;
+}
+
+.form > button[type="submit"]:hover {
+  background: var(--blue);
+}
+
+.taskListContainer > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.taskListContainer > header > h5 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.taskListContainer > header > h5:first-child {
+  color: var(--blue);
+}
+
+.taskListContainer > header > h5:last-child {
+  color: var(--purple);
+}
+
+.taskListContainer > header > h5 > span {
+  background: var(--gray-400);
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  color: var(--gray-200);
+  border-radius: 8px;
+}
+
+.noTasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  padding: 4rem 1.5rem;
+  color: var(--gray-300);
+}
+.noTasks > svg {
+  color: var(--gray-400);
+}
+
+.noTasks > h5 {
+  line-height: 1.4;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.noTasks > p {
+  line-height: 1.4;
+  font-size: 1rem;
+}
