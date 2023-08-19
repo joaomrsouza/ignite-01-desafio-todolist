@@ -97,6 +97,7 @@ function App() {
             <div>
               {tasks.map((task) => (
                 <Task
+                  key={task.task}
                   task={task}
                   onComplete={handleCompleteTask}
                   onDelete={handleDeleteTask}
